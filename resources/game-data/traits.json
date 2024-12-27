@@ -1,0 +1,913 @@
+[
+	{
+		"trait_name": "None",
+		"description_text": "",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+0",
+			"Sht-s": "+0",
+			"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Amphibious",
+		"description_text": "Amphibious units are at home in the water. They treat all water features and watery rough terrain as open terrain for movement, melee and shooting purposes. If at least 50% of an amphibious unit’s base/s are within a water feature, enemy units suffer a -1 modifier to their shooting factor. Incompatible traits: none",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+2",
+			"Sht-s": "+0",
+			"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Artillery",
+		"description_text": "Units with the artillery trait extend the long range of their shooting capacity to 10bw. It could be used for heavier weapons like bombards, ballistae or torsion catapults with a low trajectory, whether fixed in a static frame or mounted on a more mobile platform. Artillery may choose to target any eligible target rather than always shooting the nearest unit. If a unit of artillery becomes impetuous, they will remain stationary – defaulting to the ‘Let’s not be too hasty…’ result rather than rolling for impetuous actions. Incompatible traits: artillery (indirect), shieldwall",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+15",
+			"Sht-s": "+0",
+			"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"artillery (indirect)",
+			"shieldwall"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Artillery (indirect)",
+		"description_text": "Indirect artillery represents catapults, trebuchets, and mortars with the capacity to lob high trajectory missiles. Units with the artillery (indirect) trait extend the long-range of their shooting capacity to 10bw. When determining eligible targets, indirect artillery may fire over the heads of intervening units which are not treated as blocking their line of sight. Indirect artillery may choose to target any eligible target rather than always shooting the nearest unit. If a unit of indirect artillery becomes impetuous, they will remain stationary – defaulting to the ‘Let’s not be too hasty…’ result rather than rolling for impetuous actions. Incompatible traits: artillery, shieldwall",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+20",
+			"Sht-s": "+0",
+			"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"artillery",
+			"shieldwall"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Barrage",
+		"description_text": "Representing all devastating short-range attacks such as dragon breath or grenades, companies with the barrage trait adjust their short-range shooting capacity to 3. Barrage does not change a unit’s long-range shooting capacity. Incompatible traits: shooting, shooting (mixed), shooting (skilled), thrown weapons",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+3",
+			"Sht-s": "=3",
+			"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"shooting",
+			"shooting (mixed)",
+			"shooting (skilled)",
+			"thrown weapons"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Belligerent",
+		"description_text": "Belligerent units need little excuse to pick a fight, even with allies. The unit gains a +1 modifier to their Melee value when they charge – in addition to the regular +1 charge modifier. However, any result of ‘Let’s not be too hasty...’ or ‘Over there’ on the Impetuous Actions table will cause them to wheel or turn (whichever is most appropriate) to face the nearest friendly unit and move to attack them if they can. Once engaged in melee they will remain so, fighting each melee phase until they or their opponent have scattered or disengaged. A belligerent unit may only attempt to disengage from melee if it has an attached character. Belligerent units always suffer a -1 modifier to rolls to disengage. Incompatible traits: character",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "-3",
+			"Sht-s": "+0",
+			"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"character"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Berserk",
+		"description_text": "Berserk units get into a frenzy during melee. Each Melee attack roll of 6 ‘explodes’, allowing the company to roll an additional attack dice. If the exploding dice roll 6s, they do not generate further die rolls. Incompatible traits: drilled",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+3",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"drilled"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Character",
+		"description_text": "The company becomes a character-company and is modified as described above (p.8). In addition to the +5 points cost for the trait, character-companies add the usual points cost of the character to the cost of the company and increase the company’s Resolve and Melee factors as though the character was attached. Incompatible traits: character, emerge, mounted, passenger",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+5",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"character",
+			"emerge",
+			"mounted",
+			"passenger"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Drilled",
+		"description_text": "Groups composed of drilled companies may make formation changes during the Action Phase at the start or end of an advance move at the cost of half their regular movement (rounding down). Incompatible traits: berserk, impulsive, stimulants",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+2",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"berserk",
+			"impulsive",
+			"stimulants"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Doughty",
+		"description_text": "Doughty units are particularly brave or resolute, represented by conferring a +1 Resolve bonus. Incompatible traits: rabble, reckless",
+		"profile_adjustments": {
+			"Res": "+1",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+4",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"rabble",
+			"reckless"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Emerge",
+		"description_text": "Burrowing underground, hovering amid the clouds, or hidden in plain sight, a unit with the emerge trait is not placed on the table during deployment. Characters may not be attached to emerging units until they are placed on the table. When any character is activated, they may call forth the unit onto the table. Place the unit anywhere within 2bw of the activated character and roll 1d6: 1-2) the unit emerges in the wrong location. The unit maintains the intended facing but the opposing player may move the unit up to 1d3bw in any direction; 3-4) the unit emerges in the wrong location. The unit maintains the intended facing but the owning player must move the unit 1d3bw in any direction; 5+) the unit emerges exactly where it was intended and remains in place. The emerging unit counts as having activated on the turn it arrives on the table, however, units that emerge into combat count as charging. Once on the table, the unit remains on the table until it scatters. Incompatible traits: character",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+12",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"character"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Ephemeral",
+		"description_text": "Ephemeral units are able to pass through terrain like ghosts, ignoring all terrain movement and melee modifiers. They may pass through impassable terrain, but only if they have the movement to pass all of the way through and there is space to do so. Ephemeral units may not stop their movement within impassable terrain. Ephemeral units may pass through – or be passed through by any friendly unit if there is space to do so. Their shadowy nature also makes them difficult to target, increasing their Defence to 6+ against all shooting – even from heavy or powerful missile weapons, but not magic-missiles. Incompatible traits: mundane",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+10",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"mundane"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Expendable",
+		"description_text": "Expendable units are either looked down on by the rest of the army, like thralls or subject auxiliaries, or designed to be destroyed during combat like scythed chariots. When expendable units scatter, they are ignored by others and do not cause a ripple of Resolve loss. Expendable units are not included in the starting company count used to determine if more than half the starting companies on the table have scattered triggering the army’s defeat. Incompatible traits: swarm",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+3",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"swarm"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Fast",
+		"description_text": "Units with the fast trait move gain a +1 to their Movement value. Incompatible traits: slow",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+1",
+			"Mel": "+0",
+			"Pts": "+1",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"slow"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Feast",
+		"description_text": "The feast trait can be used to represent any unit which is invigorated after destroying (and eating) its enemies, such as werewolves, vampires, ghouls, or giants. If a foe engaged in melee scatters, a unit with the feast trait immediately restores 1 lost Resolve per company in the scattering unit. Incompatible traits: none",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+4",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Flying",
+		"description_text": "Flying units such as manticores, giant eagles and ornithopters gain +2 to their Movement value and ignore all movement modifiers caused by terrain. They are treated as slightly elevated during the Shooting Phase, so can shoot (and be targeted) over the heads of intervening troops and terrain. Flying units may choose to evade as a charge reaction. Incompatible traits: none",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+2",
+			"Mel": "+0",
+			"Pts": "+10",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Foresters",
+		"description_text": "Representing units adept at moving and fighting in woodland or forests such as wood elves, giant spiders and pygmies, foresters ignore the movement and melee modifiers of rough terrain and woods. Incompatible traits: none",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+3",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Furious charge",
+		"description_text": "The furious charge trait could be used to represent the impact of chariots or knights with lances, or the howling charge of wildmen, beastmen or goblins. The unit gains a +2 modifier to their Melee value when they charge – in addition to the regular +1 charge modifier. Incompatible traits: skirmishers",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+3",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"skirmishers"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Giant",
+		"description_text": "Giants are large, lumbering and powerful; they gain +2 to their Resolve and +2 to their Melee values. ‘Companies’ of giants cannot form groups. As giants tower over other units, they can shoot (and be targeted) over the heads of intervening troops and terrain during the Shooting Phase. When a giant’s Resolve is reduced to 0 it causes a ripple of Resolve loss as normal, but the giant also falls in a random direction causing two additional attacks against any unit within 1bw. Roll 1d6 to determine which direction they fall: 1) the giant falls to their left; 2) the giant falls to their rear; 3) the giant falls to their right; 4+) the giant falls to their front. Incompatible traits: long spears, monstrous, pikes, shieldwall, swarm",
+		"profile_adjustments": {
+			"Res": "+2",
+			"Mov": "+0",
+			"Mel": "+2",
+			"Pts": "+12",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"long spears",
+			"monstrous",
+			"pikes",
+			"shieldwall",
+			"swarm"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Heavy melee weapons",
+		"description_text": "Units with heavy melee weapons could be armed with two-handed weapons such as great-swords or polearms, or powerful crushing weapons which reduce the effectiveness of enemy armour or wreak havoc among closely packed ranks of soldiers. The Defence value of all melee opponents is treated as 4+, even those with shieldwall. Incompatible traits: pikes",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+3",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"pikes"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Heavy missile weapons",
+		"description_text": "Heavy missile weapons can be used to represent weapons like crossbows or light artillery pieces which have an improved capacity to puncture enemy shields and armour but are slower to reload than bows and slings. The Defence value of all shooting targets is treated as 4+ but, after shooting, the unit with heavy missile weapons must reload their weapons during an Action Phase before they can shoot again. Incompatible traits: powerful missile weapons",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+1",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"powerful missile weapons"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Highlanders",
+		"description_text": "Highlanders can move and fight freely through the high country, moors and bogs of their homeland. They suffer no movement or melee modifiers in rough terrain and each company gains +1 Melee if at least 50% of their base is within a hill terrain feature. Incompatible traits: none",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+3",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Impulsive",
+		"description_text": "The unit is prone to dashing forward when others hold back. When rolling for Mishaps, treat all results of Late as Enthusiastic. If the unit is not engaged in melee, after they complete their activation each turn, they must move 1d3-1bw directly forward (ignoring any terrain Movement modifiers but stopping if they contact a friendly unit they cannot interpenetrate or impassible terrain). If the additional movement brings them into contact with an enemy to which they can conform following the standard rules, the impulsive unit counts as charging. If the impulsive unit cannot conform to an enemy, they will stop moving ½bw before contact. Impulsive units always reroll results of “Let’s not be too hasty...” on the Impetuous Actions table. Incompatible traits: drilled",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+1",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"drilled"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Long spears",
+		"description_text": "Units with long spears gain +2 to their Melee value when charged by an enemy to their front, or if fighting to their front against units with the flying, giant, mounted, or monstrous traits. Incompatible traits: giant, mounted, pikes",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+2",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"giant",
+			"mounted",
+			"pikes"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Malodorous",
+		"description_text": "Malodorous units exude a foul stench or fell aura that impedes all units in their vicinity. All companies, friend and foe alike, within 1bw of a malodorous unit suffer -1 Melee; mounted units suffer -2 Melee. Other malodorous units with identical unit profiles and mindless units ignore the impact of the trait. Incompatible traits: none",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+4",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Militia",
+		"description_text": "Militia can be used to represent hastily raised, part-time or poorly equipped fighting units. Units with the militia trait suffer -1 to their Melee value. Incompatible traits: reckless, terrifying",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "-1",
+			"Pts": "-2",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"reckless",
+			"terrifying"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Mindless",
+		"description_text": "Undead hordes of skeletons or zombies, golems, elementals and automatons can all be represented by the mindless trait. Mindless units suffer -1 to their Melee value. However, as mindless units are not sentient, they do not suffer Resolve loss when friendly units scatter. If a mindless unit becomes impetuous, they default to the ‘Let’s not be too hasty…’ result rather than rolling for impetuous actions. Only a Mage-lord may rally mindless units, although their Resolve may also be restored by a bless spell. The magic which animates mindless units binds them to their Warlord/Mage-lord; if the Warlord/Mage-lord is killed or scatters, all mindless units suffer an immediate -5 Resolve (rather than the usual -1) as the bond is broken. Incompatible traits: proud, reliable, unreliable",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "-1",
+			"Pts": "+0",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"proud",
+			"reliable",
+			"unreliable"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Monstrous",
+		"description_text": "The monstrous trait can be used to represent units of creatures that are larger and more powerful than usual such as ogres, trolls, minotaurs or treefolk. Monstrous units gain +2 to their Resolve, and +2 to their Melee value. Incompatible traits: giant, swarm",
+		"profile_adjustments": {
+			"Res": "+2",
+			"Mov": "+0",
+			"Mel": "+2",
+			"Pts": "+12",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"giant",
+			"swarm"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Mounted",
+		"description_text": "Units mounted on creatures which increase their speed and overall battlefield capacity – such as warhorses, wolves or boars – gain +1 to their Resolve, +2 to their Movement, and +1 to their Melee values. Incompatible traits: character, long spears, pikes, shieldwall",
+		"profile_adjustments": {
+			"Res": "+1",
+			"Mov": "+2",
+			"Mel": "+1",
+			"Pts": "+8",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"character",
+			"long spears",
+			"pikes",
+			"shieldwall"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Mundane",
+		"description_text": "There is nothing magical, or even imaginative about mundane units. All magic rolls for spells effecting the mundane unit, or any units they are in base contact with, suffer a -1 modifier. Mundane targets have a Defence of 5+ against magic-missiles; prophecy dice may not be used to affect a mundane unit’s dice. Incompatible traits: ephemeral, terrifying",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+5",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"ephemeral",
+			"terrifying"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Pikes",
+		"description_text": "Units with two-handed pikes gain +3 to their Melee value when charged by an enemy to their front, or if fighting to their front against units with the flying, giant, mounted, or monstrous traits. Enemies engaged in melee against the flanks or rear of a unit with pikes receive an additional +1 Melee modifier. Incompatible traits: giant, heavy melee weapons, long spears, mounted, shieldwall, swarm",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+3",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"giant",
+			"heavy melee weapons",
+			"long spears",
+			"mounted",
+			"shieldwall",
+			"swarm"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Passenger",
+		"description_text": "Units with the passenger trait can carry a character but operate independently from them. Characters attached to the unit can rally or cast in the same Action Phase that the unengaged unit carries out an action of their own (except charging or reacting to being charged). Incompatible traits: character",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+4",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"character"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Poison",
+		"description_text": "Whether equipped with a venomous bite or sting, coating blades and arrows with poison, or breathing out noxious fumes, units with the poison trait may reroll all 1s rolled on attack dice in both the Shooting and Melee Phases. Incompatible traits: none",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+3",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Powerful missile weapons",
+		"description_text": "Powerful missile weapons can be used to represent huge artillery pieces, black powder weapons and the like which combine the ability to pass through armour with a negative psychological impact on their targets. The Defence value of all shooting targets is treated as 3+ but, after shooting, the unit with powerful missile weapons must reload their weapons during an Action Phase before they can shoot again. Incompatible traits: heavy missile weapons",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+5",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"heavy missile weapons"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Proud",
+		"description_text": "Holding themselves aloof from other, lesser beings, a proud unit does not suffer Resolve loss when friendly units scatter. Incompatible traits: mindless",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+8",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"mindless"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Rabble",
+		"description_text": "Gibbering and disorderly, units with the rabble trait suffer a -1 modifier to their Resolve. Incompatible traits: doughty, terrifying, warbeasts",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "-6",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"doughty",
+			"terrifying",
+			"warbeasts"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Reckless",
+		"description_text": "Reckless units prioritise speed and aggression over staying power. They gain +1 Move and Melee, but suffer -1 Resolve. Incompatible traits: doughty, militia",
+		"profile_adjustments": {
+			"Res": "-1",
+			"Mov": "+1",
+			"Mel": "+1",
+			"Pts": "-1",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"doughty",
+			"militia"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Regenerate",
+		"description_text": "Whether possessing an innate ability to regenerate like trolls and some lizardmen, or bearing some other device like a halfling portable kitchen, units with the regenerate trait may regenerate during the Action Phase (even when engaged in combat). Roll 1d6 for each point of lost Resolve; any scores of 6 immediately restore 1 point of Resolve. Incompatible traits: none",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+5",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Reliable",
+		"description_text": "Reliable units can be trusted to hold the line of battle, even when they are outside the immediate control of one of their commanders. Reliable units gain +1 when rolling for Mishaps at the start of the battle, and whenever they need to roll for impetuous actions. Incompatible traits: mindless, stimulants, unreliable",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+3",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"mindless",
+			"stimulants",
+			"unreliable"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Shieldwall",
+		"description_text": "Trained to present their shields as a wall of metal and wood, the unit gains a +1 modifier to their Defence value against shooting and melee attacks to the unit’s front edge. The Defence bonus of shieldwall does not count against magic-missiles or units with the heavy missile weapons or powerful missile weapons traits in the Shooting phase, nor against heavy melee weapons, in the Melee Phase. Incompatible traits: artillery, artillery (indirect), giant, mounted, pikes, skirmishers",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+8",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"artillery",
+			"artillery (indirect)",
+			"giant",
+			"mounted",
+			"pikes",
+			"skirmishers"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Shooting",
+		"description_text": "The shooting trait can be used to represent units where the majority of warriors are armed with bows, slings, crossbows, handguns or the like. The unit’s Melee factor suffers a -1 modifier and the unit’s Shooting capacity is fixed at 3/2. Incompatible traits: barrage, shooting (mixed), shooting (skilled), thrown weapons",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "-1",
+			"Pts": "+5",
+			"Sht-s": "=3",
+      		"Sht-l": "=2",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"barrage",
+			"shooting (mixed)",
+			"shooting (skilled)",
+			"thrown weapons"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Shooting (mixed)",
+		"description_text": "Some, but not all, warriors in units with the shooting (mixed) trait are equipped with missile weapons. The unit’s limited Shooting capacity is adjusted to 2/1, but its Melee factor is not impacted. Incompatible traits: barrage, shooting, shooting (skilled), thrown weapons",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+4",
+			"Sht-s": "=2",
+      		"Sht-l": "=1",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"barrage",
+			"shooting",
+			"shooting (skilled)",
+			"thrown weapons"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Shooting (skilled)",
+		"description_text": "The shooting (skilled) trait represents units of missile-armed warriors who are proverbially skilled at shooting such as rangers, elven archers or halfling wardens. The unit’s Melee factor suffers a -1 modifier and the unit’s Shooting capacity is fixed at 3/3. Incompatible traits: barrage, shooting, shooting (mixed), thrown weapons",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "-1",
+			"Pts": "+7",
+			"Sht-s": "=3",
+      		"Sht-l": "=3",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"barrage",
+			"shooting",
+			"shooting (mixed)",
+			"thrown weapons"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Slow",
+		"description_text": "Slow units suffer a -1 modifier to their Movement value. Incompatible traits: fast",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "-1",
+			"Mel": "+0",
+			"Pts": "-1",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"fast"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Skirmishers",
+		"description_text": "Units with the skirmishers trait represent warriors who favour a dispersed formation to better pass through and around obstructions. All skirmishers may pass through – or be passed through by any friendly unit if there is space to do so. Skirmishers ignore movement and melee penalties imposed when in rough terrain and woods unless they also have the mounted trait. Enemies suffer a -1 modifier to their Shooting value when shooting at skirmishers. When unengaged skirmishers are charged from the front, they may evade as a charge reaction. When engaged in open terrain, skirmishers suffer -1 and their opponents gain +1 to their respective Melee values. Incompatible traits: furious charge, shieldwall",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+4",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"furious charge",
+			"shieldwall"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Stimulants",
+		"description_text": "The warriors in this unit have partaken in stimulants such as alcohol, magic mushrooms, or perhaps painted themselves in hallucinogenic warpaint. After deployment but before rolling for Mishaps, roll 1d6 and apply the result throughout the battle. 1) The unit ignores all orders and becomes impetuous throughout the battle. 2-4) +1 Move, +1 Melee. 5-6) The unit gains the berserk and proud traits. Incompatible traits: drilled, reliable",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+4",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"drilled",
+			"reliable"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Swarm",
+		"description_text": "Swarms represent masses of small creatures such as rats, wasps and bats which are only threatening in great numbers. Swarms suffer penalties of -1 Resolve, -1 Movement, and -1 to their Melee value. Swarms never block line of sight – they can be shot over or through by other units. Enemies suffer a -1 modifier to their Shooting value when shooting at swarms. When swarm units scatter, they are ignored by others and do not cause a ripple of Resolve loss. Swarms are not included in the starting company count used to determine if more than half the starting companies on the table have scattered triggering the army’s defeat. Incompatible traits: expendable, giant, monstrous, pikes, warbeasts",
+		"profile_adjustments": {
+			"Res": "-1",
+			"Mov": "-1",
+			"Mel": "-1",
+			"Pts": "-1",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"expendable",
+			"giant",
+			"monstrous",
+			"pikes",
+			"warbeasts"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Terrifying",
+		"description_text": "Enemies wishing to charge a terrifying unit must roll below their own profile’s starting Resolve on a 1d6 in order to engage them (i.e. a unit of irregular companies would need to roll a 1 or 2, but a doughty elite unit would need to roll 5 or less). Modify the target number by +1 for every character attached to the charging unit. If the dice roll fails, the charge must stop ½bw away from the terrifying unit. All enemies attacking the front of a terrifying unit suffer -2 to their Melee factor. Mindless and terrifying units ignore the terrifying trait of others. Incompatible traits: militia, mundane, rabble",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+25",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"militia",
+			"mundane",
+			"rabble"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Thrown weapons",
+		"description_text": "Bearing throwing weapons such as javelins, franciscas, or shurikens, units with thrown weapons gain +1/+0 to their Shooting value. Incompatible traits: barrage, shooting, shooting (mixed), shooting (skilled)",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+1",
+			"Sht-s": "+1",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"barrage",
+			"shooting",
+			"shooting (mixed)",
+			"shooting (skilled)"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Unreliable",
+		"description_text": "Unreliable units cannot be trusted to hold their position in battle without direct supervision. They suffer a -1 modifier when rolling for Mishaps at the start of the battle, and for all impetuous actions. Incompatible traits: mindless, reliable",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "-4",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"mindless",
+			"reliable"
+		],
+		"is_passive": false
+	},
+	{
+		"trait_name": "Warbeasts",
+		"description_text": "The unit deploys with a compliment of savage warbeasts, crazed fanatics, or explosively powerful, single-use weapons which are used to break enemy lines on first impact. The unit can reroll all unsuccessful attack dice in it’s first round of melee each game. Incompatible traits: rabble, swarm",
+		"profile_adjustments": {
+			"Res": "+0",
+			"Mov": "+0",
+			"Mel": "+0",
+			"Pts": "+4",
+			"Sht-s": "+0",
+      		"Sht-l": "+0",
+			"Def": "+0"
+		},
+		"incompatible_traits": [
+			"rabble",
+			"swarm"
+		],
+		"is_passive": false
+	}
+]

@@ -1,0 +1,146 @@
+[
+    { 
+        "name" : "Warlord",
+        "Pts": "60",
+        "profile": 
+                {
+			        "Res": "2",
+			        "Mov": "4",
+			        "Mel": "2",
+			        "Sht-s": "0",
+      		        "Sht-l": "0",
+    			    "Def": "6+"
+		        }
+    },
+
+    { 
+        "name" : "Magelord",
+        "Pts": "75",
+        "profile": 
+                {
+			        "Res": "2",
+			        "Mov": "4",
+			        "Mel": "2",
+			        "Sht-s": "0",
+      		        "Sht-l": "0",
+    			    "Def": "6+"
+		        }
+    },
+    { 
+        "name" : "Captain",
+        "Pts": "25",
+        "profile": 
+                {
+			        "Res": "1",
+			        "Mov": "4",
+			        "Mel": "1",
+			        "Sht-s": "0",
+      		        "Sht-l": "0",
+    			    "Def": "5+"
+		        }
+    },
+    { 
+        "name" : "Rouge",
+        "Pts": "25",
+        "profile": 
+                {
+			        "Res": "1",
+			        "Mov": "4",
+			        "Mel": "1",
+			        "Sht-s": "0",
+      		        "Sht-l": "0",
+    			    "Def": "6+"
+		        }
+    },
+    { 
+        "name" : "Elite Company",
+        "Pts": "36",
+        "profile": 
+                {
+			        "Res": "5",
+			        "Mov": "2",
+			        "Mel": "4",
+			        "Sht-s": "0",
+      		        "Sht-l": "0",
+    			    "Def": "5+"
+		        }
+    },
+    { 
+        "name" : "Formed Company",
+        "Pts": "30",
+        "profile": 
+                {
+			        "Res": "4",
+			        "Mov": "2",
+			        "Mel": "3",
+			        "Sht-s": "0",
+      		        "Sht-l": "0",
+    			    "Def": "5+"
+		        }
+    },
+    { 
+        "name" : "Irregular Company",
+        "Pts": "22",
+        "profile": 
+                {
+			        "Res": "3",
+			        "Mov": "3",
+			        "Mel": "3",
+			        "Sht-s": "1",
+      		        "Sht-l": "0",
+    			    "Def": "4+"
+		        }
+    },
+    { 
+        "name" : "Fantastic Beasts",
+        "Pts": "31",
+        "profile": 
+                {
+			        "Res": "5",
+			        "Mov": "3",
+			        "Mel": "4",
+			        "Sht-s": "0",
+      		        "Sht-l": "0",
+    			    "Def": "4+"
+		        }
+    },
+    { 
+        "name" : "Dragon",
+        "Pts": "42",
+        "profile": 
+                {
+			        "Res": "6",
+			        "Mov": "4",
+			        "Mel": "4",
+			        "Sht-s": "0",
+      		        "Sht-l": "0",
+    			    "Def": "5+"
+		        }
+    },
+    { 
+        "name" : "Ordance Battery",
+        "Pts": "21",
+        "profile": 
+                {
+			        "Res": "3",
+			        "Mov": "1",
+			        "Mel": "1",
+			        "Sht-s": "0",
+      		        "Sht-l": "2",
+    			    "Def": "4+"
+		        }
+    },
+    { 
+        "name" : "Vehicle",
+        "Pts": "36",
+        "profile": 
+                {
+			        "Res": "5",
+			        "Mov": "4",
+			        "Mel": "3",
+			        "Sht-s": "0",
+      		        "Sht-l": "0",
+    			    "Def": "5+"
+		        }
+    }
+]
